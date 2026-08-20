@@ -1,0 +1,1 @@
+The files, main.c1, main.c2, main.c3, main.c4, main.c5, main.c6 contain the code skeletons for each task from 1-6.

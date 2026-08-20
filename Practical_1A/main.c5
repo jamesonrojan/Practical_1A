@@ -1,0 +1,74 @@
+#include "main.h"
+
+/* ---------- Function prototypes ---------- */
+static void GPIO_Init(void);
+static void ADC_Init(void);
+static void write_led_byte(uint8_t pattern);
+
+int main(void)
+{
+    HAL_Init(); // still fine to call - only sets up SysTick/core clocks
+    GPIO_Init();
+    ADC_Init();
+    
+    /* TODO: Start continuous conversion using ADC1 control register */
+    
+    while (1)
+    {
+        /* everything happens in the ISR */
+    }
+}
+
+/* ---------- GPIO Configuration ---------- */
+static void GPIO_Init(void)
+{
+    /* TODO: Enable clocks for GPIOA and GPIOB */
+    
+    /* TODO: Configure PA5 as Analog mode (11) for ADC_IN5 */
+    
+    /* TODO: Configure PB0-PB7 as General purpose outputs (01) and clear ODR initially */
+}
+
+/* ---------- ADC Configuration ---------- */
+static void ADC_Init(void)
+{
+    /* TODO: Enable APB2 clock for ADC1 */
+    
+    /* TODO: Ensure ADC is disabled, then run calibration */
+    
+    /* TODO: Select channel 5 (PA5) and configure sampling time */
+    
+    /* TODO: Configure 12-bit resolution, right alignment, and continuous conversion mode */
+    
+    /* TODO: Enable end-of-conversion interrupt and configure NVIC priorities */
+    
+    /* TODO: Enable the ADC and wait for the ADRDY flag */
+}
+
+/* ---------- Interrupt Service Routine ---------- */
+void ADC1_COMP_IRQHandler(void)
+{
+    if (ADC1->ISR & ADC_ISR_EOC)
+    {
+        /* TODO: Read the raw 12-bit ADC value from the data register (DR) */
+        uint32_t adc_val = 0; // Replace with register read
+        
+        /* TODO: Scale the raw value proportionally to a number of LEDs (0 - 8) */
+        uint8_t leds_to_light = 0; // Replace with your scaling calculation
+        
+        /* TODO: Build the bar-graph bit pattern using bitwise shifting */
+        uint8_t output_pattern = 0; // Replace with your bit pattern logic
+        
+        /* TODO: Drive PB0-PB7 using the helper function */
+        // write_led_byte(output_pattern);
+    }
+}
+
+/* ---------- Helper: write an 8-bit pattern to PB0-PB7 ---------- */
+static void write_led_byte(uint8_t pattern)
+{
+    uint32_t odr = GPIOB->ODR;
+    odr &= ~(0xFFU);
+    odr |= pattern;
+    GPIOB->ODR = odr;
+}
