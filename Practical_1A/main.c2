@@ -35,6 +35,9 @@ void update_led_pattern(void);
 void turn_off_all_leds(void)
 {
     /* TODO: Iterate through the LED arrays and turn off all LEDs */
+    for(uint8_t i = 0; i < 8; i++){
+      HAL_GPIO_WritePin(GPIOB, led_pins[i], GPIO_PIN_RESET);
+    }
     
 }
 
@@ -42,9 +45,21 @@ void update_led_pattern(void)
 {
     /* TODO: Implement the running light pattern logic */
     // 1. Turn off all LEDs
+    turn_off_all_leds();
+
     // 2. Turn on the current LED
+    HAL_GPIO_WritePin(GPIOB, led_pins[current_led], GPIO_PIN_SET);
+
     // 3. Update the current_led index based on direction
+    current_led += direction;
+
     // 4. Handle direction reversal at the edges (without duplicating states)
+    if(current_led == 7){
+      direction = -1;
+    }
+    else if(current_led == 0){
+      direction = 1;
+    }
     
 }
 /* USER CODE END 0 */
@@ -73,7 +88,10 @@ int main(void)
         /* USER CODE BEGIN WHILE */
         /* TODO: Check if the timer_event flag is set.
                  If so, clear the flag and call the function to update the LED pattern. */
-
+        if(timer_event){
+          timer_event = 0;
+          update_led_pattern();
+        }
         /* USER CODE END WHILE */
     }
 }
@@ -148,6 +166,7 @@ void TIM16_IRQHandler(void)
 {
     HAL_TIM_IRQHandler(&htim16);   // Clears the update flag
     /* TODO: Set the global timer_event flag to signal the main loop */
+    timer_event = 1;
     
 }
 
