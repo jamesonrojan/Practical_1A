@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\fastr\AppData\Local\Temp\ccydrQaG.s 			page 1
+ARM GAS  C:\Users\fastr\AppData\Local\Temp\ccNwMqFE.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\fastr\AppData\Local\Temp\ccydrQaG.s 			page 1
   30:Core/Src/system_stm32f0xx.c ****   * If no LICENSE file comes with this software, it is provided AS-IS.
   31:Core/Src/system_stm32f0xx.c ****   *
   32:Core/Src/system_stm32f0xx.c ****   ******************************************************************************
-ARM GAS  C:\Users\fastr\AppData\Local\Temp\ccydrQaG.s 			page 2
+ARM GAS  C:\Users\fastr\AppData\Local\Temp\ccNwMqFE.s 			page 2
 
 
   33:Core/Src/system_stm32f0xx.c ****   */
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\fastr\AppData\Local\Temp\ccydrQaG.s 			page 1
   87:Core/Src/system_stm32f0xx.c ****   */
   88:Core/Src/system_stm32f0xx.c **** 
   89:Core/Src/system_stm32f0xx.c **** /** @addtogroup STM32F0xx_System_Private_Variables
-ARM GAS  C:\Users\fastr\AppData\Local\Temp\ccydrQaG.s 			page 3
+ARM GAS  C:\Users\fastr\AppData\Local\Temp\ccNwMqFE.s 			page 3
 
 
   90:Core/Src/system_stm32f0xx.c ****   * @{
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\fastr\AppData\Local\Temp\ccydrQaG.s 			page 1
   36              	.LFE40:
   38              		.section	.text.SystemCoreClockUpdate,"ax",%progbits
   39              		.align	1
-ARM GAS  C:\Users\fastr\AppData\Local\Temp\ccydrQaG.s 			page 4
+ARM GAS  C:\Users\fastr\AppData\Local\Temp\ccNwMqFE.s 			page 4
 
 
   40              		.global	SystemCoreClockUpdate
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\fastr\AppData\Local\Temp\ccydrQaG.s 			page 1
   50              		@ frame_needed = 0, uses_anonymous_args = 0
   51 0000 10B5     		push	{r4, lr}
   52              		.cfi_def_cfa_offset 8
-ARM GAS  C:\Users\fastr\AppData\Local\Temp\ccydrQaG.s 			page 5
+ARM GAS  C:\Users\fastr\AppData\Local\Temp\ccNwMqFE.s 			page 5
 
 
   53              		.cfi_offset 4, -8
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\fastr\AppData\Local\Temp\ccydrQaG.s 			page 1
  203:Core/Src/system_stm32f0xx.c ****         SystemCoreClock = (HSE_VALUE/predivfactor) * pllmull;
  204:Core/Src/system_stm32f0xx.c ****       }
  205:Core/Src/system_stm32f0xx.c **** #if defined(STM32F042x6) || defined(STM32F048xx) || defined(STM32F071xB) || defined(STM32F072xB) ||
-ARM GAS  C:\Users\fastr\AppData\Local\Temp\ccydrQaG.s 			page 6
+ARM GAS  C:\Users\fastr\AppData\Local\Temp\ccNwMqFE.s 			page 6
 
 
  206:Core/Src/system_stm32f0xx.c ****       else if (pllsource == RCC_CFGR_PLLSRC_HSI48_PREDIV)
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\fastr\AppData\Local\Temp\ccydrQaG.s 			page 1
  191:Core/Src/system_stm32f0xx.c ****       break;
  107              		.loc 1 191 7 is_stmt 1 view .LVU20
  191:Core/Src/system_stm32f0xx.c ****       break;
-ARM GAS  C:\Users\fastr\AppData\Local\Temp\ccydrQaG.s 			page 7
+ARM GAS  C:\Users\fastr\AppData\Local\Temp\ccNwMqFE.s 			page 7
 
 
  108              		.loc 1 191 23 is_stmt 0 view .LVU21
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\fastr\AppData\Local\Temp\ccydrQaG.s 			page 1
  200:Core/Src/system_stm32f0xx.c ****       {
  147              		.loc 1 200 7 is_stmt 1 view .LVU37
  200:Core/Src/system_stm32f0xx.c ****       {
-ARM GAS  C:\Users\fastr\AppData\Local\Temp\ccydrQaG.s 			page 8
+ARM GAS  C:\Users\fastr\AppData\Local\Temp\ccNwMqFE.s 			page 8
 
 
  148              		.loc 1 200 10 is_stmt 0 view .LVU38
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\fastr\AppData\Local\Temp\ccydrQaG.s 			page 1
  229:Core/Src/system_stm32f0xx.c ****   }
  191              		.loc 1 229 7 is_stmt 1 view .LVU50
  192 007e CDE7     		b	.L6
-ARM GAS  C:\Users\fastr\AppData\Local\Temp\ccydrQaG.s 			page 9
+ARM GAS  C:\Users\fastr\AppData\Local\Temp\ccNwMqFE.s 			page 9
 
 
  193              	.L9:
@@ -516,22 +516,22 @@ ARM GAS  C:\Users\fastr\AppData\Local\Temp\ccydrQaG.s 			page 1
  228              		.file 3 "C:/Users/fastr/AppData/Roaming/Code/User/globalStorage/bmd.stm32-for-vscode/@xpack-dev-to
  229              		.file 4 "Drivers/CMSIS/Device/ST/STM32F0xx/Include/system_stm32f0xx.h"
  230              		.file 5 "Drivers/CMSIS/Device/ST/STM32F0xx/Include/stm32f051x8.h"
-ARM GAS  C:\Users\fastr\AppData\Local\Temp\ccydrQaG.s 			page 10
+ARM GAS  C:\Users\fastr\AppData\Local\Temp\ccNwMqFE.s 			page 10
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 system_stm32f0xx.c
-C:\Users\fastr\AppData\Local\Temp\ccydrQaG.s:19     .text.SystemInit:00000000 $t
-C:\Users\fastr\AppData\Local\Temp\ccydrQaG.s:25     .text.SystemInit:00000000 SystemInit
-C:\Users\fastr\AppData\Local\Temp\ccydrQaG.s:39     .text.SystemCoreClockUpdate:00000000 $t
-C:\Users\fastr\AppData\Local\Temp\ccydrQaG.s:45     .text.SystemCoreClockUpdate:00000000 SystemCoreClockUpdate
-C:\Users\fastr\AppData\Local\Temp\ccydrQaG.s:196    .text.SystemCoreClockUpdate:00000080 $d
-C:\Users\fastr\AppData\Local\Temp\ccydrQaG.s:223    .data.SystemCoreClock:00000000 SystemCoreClock
-C:\Users\fastr\AppData\Local\Temp\ccydrQaG.s:215    .rodata.AHBPrescTable:00000000 AHBPrescTable
-C:\Users\fastr\AppData\Local\Temp\ccydrQaG.s:208    .rodata.APBPrescTable:00000000 APBPrescTable
-C:\Users\fastr\AppData\Local\Temp\ccydrQaG.s:205    .rodata.APBPrescTable:00000000 $d
-C:\Users\fastr\AppData\Local\Temp\ccydrQaG.s:212    .rodata.AHBPrescTable:00000000 $d
-C:\Users\fastr\AppData\Local\Temp\ccydrQaG.s:220    .data.SystemCoreClock:00000000 $d
+C:\Users\fastr\AppData\Local\Temp\ccNwMqFE.s:19     .text.SystemInit:00000000 $t
+C:\Users\fastr\AppData\Local\Temp\ccNwMqFE.s:25     .text.SystemInit:00000000 SystemInit
+C:\Users\fastr\AppData\Local\Temp\ccNwMqFE.s:39     .text.SystemCoreClockUpdate:00000000 $t
+C:\Users\fastr\AppData\Local\Temp\ccNwMqFE.s:45     .text.SystemCoreClockUpdate:00000000 SystemCoreClockUpdate
+C:\Users\fastr\AppData\Local\Temp\ccNwMqFE.s:196    .text.SystemCoreClockUpdate:00000080 $d
+C:\Users\fastr\AppData\Local\Temp\ccNwMqFE.s:223    .data.SystemCoreClock:00000000 SystemCoreClock
+C:\Users\fastr\AppData\Local\Temp\ccNwMqFE.s:215    .rodata.AHBPrescTable:00000000 AHBPrescTable
+C:\Users\fastr\AppData\Local\Temp\ccNwMqFE.s:208    .rodata.APBPrescTable:00000000 APBPrescTable
+C:\Users\fastr\AppData\Local\Temp\ccNwMqFE.s:205    .rodata.APBPrescTable:00000000 $d
+C:\Users\fastr\AppData\Local\Temp\ccNwMqFE.s:212    .rodata.AHBPrescTable:00000000 $d
+C:\Users\fastr\AppData\Local\Temp\ccNwMqFE.s:220    .data.SystemCoreClock:00000000 $d
 
 UNDEFINED SYMBOLS
 __aeabi_uidiv

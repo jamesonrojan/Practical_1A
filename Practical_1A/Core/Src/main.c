@@ -1,7 +1,7 @@
 /*
  * Task 7: Software PWM via Timer Interrupts
  * Target: STM32F051C8 (UCT Dev Board)
- * Output: PB5 (Byte of LEDs bit D5)
+ * Output: PB4 (Byte of LEDs bit D4)
  * Signal: 100 Hz, 30% duty cycle, generated entirely in software
  */
 #include "stm32f0xx.h"
@@ -29,19 +29,19 @@ static void GPIO_Init(void)
     /* TODO: Enable GPIOB clock */
     RCC->AHBENR |= RCC_AHBENR_GPIOBEN;
     
-    /* TODO: Configure PB5 as a general purpose output, push-pull, medium speed, no pull-up/pull-down */
-    GPIOB->MODER &= ~(3U << (5 * 2));
-    GPIOB->MODER |=  (1U << (5 * 2));
+    /* TODO: Configure PB4 as a general purpose output, push-pull, medium speed, no pull-up/pull-down */
+    GPIOB->MODER &= ~(3U << (4 * 2));
+    GPIOB->MODER |=  (1U << (4 * 2));
 
-    GPIOB->OTYPER &= ~(1U << 5);
+    GPIOB->OTYPER &= ~(1U << 4);
 
-    GPIOB->OSPEEDR &= ~(3U << (5 * 2));
-    GPIOB->OSPEEDR |=  (1U << (5 * 2));
+    GPIOB->OSPEEDR &= ~(3U << (4 * 2));
+    GPIOB->OSPEEDR |=  (1U << (4 * 2));
 
-    GPIOB->PUPDR &= ~(3U << (5 * 2));
+    GPIOB->PUPDR &= ~(3U << (4 * 2));
     
-    /* TODO: Ensure PB5 starts low */
-    GPIOB->BRR = (1U << 5);
+    /* TODO: Ensure PB4 starts low */
+    GPIOB->BRR = (1U << 4);
 }
 
 static void TIM16_Init(void)
@@ -72,20 +72,19 @@ void TIM16_IRQHandler(void)
     /* TODO: Check if the update interrupt flag (UIF) is set */
     if (TIM16->SR & TIM_SR_UIF)
     {
-    
         /* TODO: Clear the update interrupt flag */
         TIM16->SR &= ~TIM_SR_UIF;
         
         /* TODO: Implement 30% duty cycle logic: 
-         * If counter < 30, drive PB5 high using BSRR.
-         * If counter >= 30, drive PB5 low using BRR/BSRR. */
-         if (counter < 30)
+         * If counter < 30, drive PB4 high using BSRR.
+         * If counter >= 30, drive PB4 low using BRR/BSRR. */
+        if (counter < 30)
         {
-            GPIOB->BSRR = (1U << 5);// Drive PB5 High
+            GPIOB->BSRR = (1U << 4); // Drive PB4 High
         }
         else
         {
-            GPIOB->BRR = (1U << 5);// Drive PB5 Low
+            GPIOB->BRR = (1U << 4);  // Drive PB4 Low
         }
         
         /* TODO: Increment counter and reset to zero when counter reaches 100 */
@@ -94,6 +93,5 @@ void TIM16_IRQHandler(void)
         {
             counter = 0;
         }
-      }
-    
+    }
 }

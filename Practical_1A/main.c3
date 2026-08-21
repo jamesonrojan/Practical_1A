@@ -28,7 +28,7 @@ uint16_t led_pins[8] = {GPIO_PIN_0, GPIO_PIN_1, GPIO_PIN_2, GPIO_PIN_3,
 GPIO_PIN_4, GPIO_PIN_5, GPIO_PIN_6, GPIO_PIN_7};
 
 // TODO: Define your debounce delay based on your oscilloscope measurement
-#define DEBOUNCE_MS 1
+#define DEBOUNCE_MS 5
 uint32_t last_button_press_time = 0;
 
 // Speed state: 0 = slow (1s), 1 = fast (0.5s)

@@ -39,13 +39,13 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY, DEBUGGING, OCTETS
  17 .debug_rnglists 0000011a  00000000  00000000  00003c88  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 18 .debug_line   00000e96  00000000  00000000  00003da2  2**0
+ 18 .debug_line   00000e98  00000000  00000000  00003da2  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 19 .debug_str    0000092f  00000000  00000000  00004c38  2**0
+ 19 .debug_str    0000092f  00000000  00000000  00004c3a  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 20 .debug_frame  000002b8  00000000  00000000  00005568  2**2
+ 20 .debug_frame  000002b8  00000000  00000000  0000556c  2**2
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 21 .debug_line_str 0000006f  00000000  00000000  00005820  2**0
+ 21 .debug_line_str 0000006f  00000000  00000000  00005824  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
 
 Disassembly of section .text:
@@ -101,48 +101,48 @@ static void GPIO_Init(void)
  8000112:	430b      	orrs	r3, r1
  8000114:	6153      	str	r3, [r2, #20]
     
-    /* TODO: Configure PB5 as a general purpose output, push-pull, medium speed, no pull-up/pull-down */
-    GPIOB->MODER &= ~(3U << (5 * 2));
+    /* TODO: Configure PB4 as a general purpose output, push-pull, medium speed, no pull-up/pull-down */
+    GPIOB->MODER &= ~(3U << (4 * 2));
  8000116:	4b0d      	ldr	r3, [pc, #52]	@ (800014c <GPIO_Init+0x44>)
  8000118:	681a      	ldr	r2, [r3, #0]
  800011a:	490d      	ldr	r1, [pc, #52]	@ (8000150 <GPIO_Init+0x48>)
  800011c:	400a      	ands	r2, r1
  800011e:	601a      	str	r2, [r3, #0]
-    GPIOB->MODER |=  (1U << (5 * 2));
+    GPIOB->MODER |=  (1U << (4 * 2));
  8000120:	6818      	ldr	r0, [r3, #0]
  8000122:	2280      	movs	r2, #128	@ 0x80
- 8000124:	00d2      	lsls	r2, r2, #3
+ 8000124:	0052      	lsls	r2, r2, #1
  8000126:	4310      	orrs	r0, r2
  8000128:	6018      	str	r0, [r3, #0]
 
-    GPIOB->OTYPER &= ~(1U << 5);
+    GPIOB->OTYPER &= ~(1U << 4);
  800012a:	6858      	ldr	r0, [r3, #4]
- 800012c:	2420      	movs	r4, #32
+ 800012c:	2410      	movs	r4, #16
  800012e:	43a0      	bics	r0, r4
  8000130:	6058      	str	r0, [r3, #4]
 
-    GPIOB->OSPEEDR &= ~(3U << (5 * 2));
+    GPIOB->OSPEEDR &= ~(3U << (4 * 2));
  8000132:	6898      	ldr	r0, [r3, #8]
  8000134:	4008      	ands	r0, r1
  8000136:	6098      	str	r0, [r3, #8]
-    GPIOB->OSPEEDR |=  (1U << (5 * 2));
+    GPIOB->OSPEEDR |=  (1U << (4 * 2));
  8000138:	6898      	ldr	r0, [r3, #8]
  800013a:	4302      	orrs	r2, r0
  800013c:	609a      	str	r2, [r3, #8]
 
-    GPIOB->PUPDR &= ~(3U << (5 * 2));
+    GPIOB->PUPDR &= ~(3U << (4 * 2));
  800013e:	68da      	ldr	r2, [r3, #12]
  8000140:	400a      	ands	r2, r1
  8000142:	60da      	str	r2, [r3, #12]
     
-    /* TODO: Ensure PB5 starts low */
-    GPIOB->BRR = (1U << 5);
+    /* TODO: Ensure PB4 starts low */
+    GPIOB->BRR = (1U << 4);
  8000144:	629c      	str	r4, [r3, #40]	@ 0x28
 }
  8000146:	bd10      	pop	{r4, pc}
  8000148:	40021000 	.word	0x40021000
  800014c:	48000400 	.word	0x48000400
- 8000150:	fffff3ff 	.word	0xfffff3ff
+ 8000150:	fffffcff 	.word	0xfffffcff
 
 08000154 <TIM16_Init>:
 
@@ -235,7 +235,6 @@ void TIM16_IRQHandler(void)
  80001bc:	07db      	lsls	r3, r3, #31
  80001be:	d514      	bpl.n	80001ea <TIM16_IRQHandler+0x32>
     {
-    
         /* TODO: Clear the update interrupt flag */
         TIM16->SR &= ~TIM_SR_UIF;
  80001c0:	4a0c      	ldr	r2, [pc, #48]	@ (80001f4 <TIM16_IRQHandler+0x3c>)
@@ -245,20 +244,20 @@ void TIM16_IRQHandler(void)
  80001c8:	6113      	str	r3, [r2, #16]
         
         /* TODO: Implement 30% duty cycle logic: 
-         * If counter < 30, drive PB5 high using BSRR.
-         * If counter >= 30, drive PB5 low using BRR/BSRR. */
-         if (counter < 30)
+         * If counter < 30, drive PB4 high using BSRR.
+         * If counter >= 30, drive PB4 low using BRR/BSRR. */
+        if (counter < 30)
  80001ca:	4b0b      	ldr	r3, [pc, #44]	@ (80001f8 <TIM16_IRQHandler+0x40>)
  80001cc:	781b      	ldrb	r3, [r3, #0]
  80001ce:	2b1d      	cmp	r3, #29
  80001d0:	d80c      	bhi.n	80001ec <TIM16_IRQHandler+0x34>
         {
-            GPIOB->BSRR = (1U << 5);// Drive PB5 High
+            GPIOB->BSRR = (1U << 4); // Drive PB4 High
  80001d2:	4a0a      	ldr	r2, [pc, #40]	@ (80001fc <TIM16_IRQHandler+0x44>)
- 80001d4:	311f      	adds	r1, #31
+ 80001d4:	310f      	adds	r1, #15
  80001d6:	6191      	str	r1, [r2, #24]
         {
-            GPIOB->BRR = (1U << 5);// Drive PB5 Low
+            GPIOB->BRR = (1U << 4);  // Drive PB4 Low
         }
         
         /* TODO: Increment counter and reset to zero when counter reaches 100 */
@@ -276,12 +275,11 @@ void TIM16_IRQHandler(void)
  80001e6:	2200      	movs	r2, #0
  80001e8:	701a      	strb	r2, [r3, #0]
         }
-      }
-    
+    }
  80001ea:	4770      	bx	lr
-            GPIOB->BRR = (1U << 5);// Drive PB5 Low
+            GPIOB->BRR = (1U << 4);  // Drive PB4 Low
  80001ec:	4a03      	ldr	r2, [pc, #12]	@ (80001fc <TIM16_IRQHandler+0x44>)
- 80001ee:	2120      	movs	r1, #32
+ 80001ee:	2110      	movs	r1, #16
  80001f0:	6291      	str	r1, [r2, #40]	@ 0x28
  80001f2:	e7f1      	b.n	80001d8 <TIM16_IRQHandler+0x20>
  80001f4:	40014400 	.word	0x40014400

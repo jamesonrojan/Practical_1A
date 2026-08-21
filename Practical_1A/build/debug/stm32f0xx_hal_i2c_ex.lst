@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\fastr\AppData\Local\Temp\cc5QJ0Ta.s 			page 1
+ARM GAS  C:\Users\fastr\AppData\Local\Temp\ccMeZEyW.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\fastr\AppData\Local\Temp\cc5QJ0Ta.s 			page 1
   29:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c_ex.c ****        devices contains the following additional features
   30:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c_ex.c **** 
   31:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c_ex.c ****        (+) Possibility to disable or enable Analog Noise Filter
-ARM GAS  C:\Users\fastr\AppData\Local\Temp\cc5QJ0Ta.s 			page 2
+ARM GAS  C:\Users\fastr\AppData\Local\Temp\ccMeZEyW.s 			page 2
 
 
   32:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c_ex.c ****        (+) Use of a configured Digital Noise Filter
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\fastr\AppData\Local\Temp\cc5QJ0Ta.s 			page 1
   86:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c_ex.c ****   * @{
   87:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c_ex.c ****   */
   88:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c_ex.c **** 
-ARM GAS  C:\Users\fastr\AppData\Local\Temp\cc5QJ0Ta.s 			page 3
+ARM GAS  C:\Users\fastr\AppData\Local\Temp\ccMeZEyW.s 			page 3
 
 
   89:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c_ex.c **** /**
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\fastr\AppData\Local\Temp\cc5QJ0Ta.s 			page 1
   63 001c 4125     		movs	r5, #65
   64 001e 4355     		strb	r3, [r0, r5]
  108:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c_ex.c **** 
-ARM GAS  C:\Users\fastr\AppData\Local\Temp\cc5QJ0Ta.s 			page 4
+ARM GAS  C:\Users\fastr\AppData\Local\Temp\ccMeZEyW.s 			page 4
 
 
  109:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c_ex.c ****     /* Disable the selected I2C peripheral */
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\fastr\AppData\Local\Temp\cc5QJ0Ta.s 			page 1
  124:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c_ex.c **** 
  125:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c_ex.c ****     return HAL_OK;
  104              		.loc 1 125 5 view .LVU29
-ARM GAS  C:\Users\fastr\AppData\Local\Temp\cc5QJ0Ta.s 			page 5
+ARM GAS  C:\Users\fastr\AppData\Local\Temp\ccMeZEyW.s 			page 5
 
 
  105              		.loc 1 125 12 is_stmt 0 view .LVU30
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\fastr\AppData\Local\Temp\cc5QJ0Ta.s 			page 1
  140:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c_ex.c **** HAL_StatusTypeDef HAL_I2CEx_ConfigDigitalFilter(I2C_HandleTypeDef *hi2c, uint32_t DigitalFilter)
  141:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c_ex.c **** {
  143              		.loc 1 141 1 is_stmt 1 view -0
-ARM GAS  C:\Users\fastr\AppData\Local\Temp\cc5QJ0Ta.s 			page 6
+ARM GAS  C:\Users\fastr\AppData\Local\Temp\ccMeZEyW.s 			page 6
 
 
  144              		.cfi_startproc
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\fastr\AppData\Local\Temp\cc5QJ0Ta.s 			page 1
  183 0022 2368     		ldr	r3, [r4]
  184 0024 9343     		bics	r3, r2
  185 0026 2360     		str	r3, [r4]
-ARM GAS  C:\Users\fastr\AppData\Local\Temp\cc5QJ0Ta.s 			page 7
+ARM GAS  C:\Users\fastr\AppData\Local\Temp\ccMeZEyW.s 			page 7
 
 
  157:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c_ex.c **** 
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\fastr\AppData\Local\Temp\cc5QJ0Ta.s 			page 1
  221 0042 0023     		movs	r3, #0
  222 0044 6246     		mov	r2, ip
  223 0046 8354     		strb	r3, [r0, r2]
-ARM GAS  C:\Users\fastr\AppData\Local\Temp\cc5QJ0Ta.s 			page 8
+ARM GAS  C:\Users\fastr\AppData\Local\Temp\ccMeZEyW.s 			page 8
 
 
  224              		.loc 1 175 5 view .LVU67
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\fastr\AppData\Local\Temp\cc5QJ0Ta.s 			page 1
  188:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c_ex.c **** 
  189:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c_ex.c **** /** @defgroup I2CEx_Exported_Functions_Group2 WakeUp Mode Functions
  190:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c_ex.c ****   * @brief    WakeUp Mode Functions
-ARM GAS  C:\Users\fastr\AppData\Local\Temp\cc5QJ0Ta.s 			page 9
+ARM GAS  C:\Users\fastr\AppData\Local\Temp\ccMeZEyW.s 			page 9
 
 
  191:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c_ex.c ****   *
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\fastr\AppData\Local\Temp\cc5QJ0Ta.s 			page 1
  291 0016 4254     		strb	r2, [r0, r1]
  292              		.loc 1 217 5 view .LVU84
  218:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c_ex.c **** 
-ARM GAS  C:\Users\fastr\AppData\Local\Temp\cc5QJ0Ta.s 			page 10
+ARM GAS  C:\Users\fastr\AppData\Local\Temp\ccMeZEyW.s 			page 10
 
 
  219:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c_ex.c ****     hi2c->State = HAL_I2C_STATE_BUSY;
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\fastr\AppData\Local\Temp\cc5QJ0Ta.s 			page 1
  331              		.loc 1 234 12 is_stmt 0 view .LVU99
  332 0048 0020     		movs	r0, #0
  333              	.LVL20:
-ARM GAS  C:\Users\fastr\AppData\Local\Temp\cc5QJ0Ta.s 			page 11
+ARM GAS  C:\Users\fastr\AppData\Local\Temp\ccMeZEyW.s 			page 11
 
 
  334              	.L14:
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\fastr\AppData\Local\Temp\cc5QJ0Ta.s 			page 1
  371              		.cfi_def_cfa_offset 12
  372              		.cfi_offset 4, -12
  373              		.cfi_offset 5, -8
-ARM GAS  C:\Users\fastr\AppData\Local\Temp\cc5QJ0Ta.s 			page 12
+ARM GAS  C:\Users\fastr\AppData\Local\Temp\ccMeZEyW.s 			page 12
 
 
  374              		.cfi_offset 14, -4
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\fastr\AppData\Local\Temp\cc5QJ0Ta.s 			page 1
  413 0030 2B40     		ands	r3, r5
  414 0032 2360     		str	r3, [r4]
  265:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c_ex.c **** 
-ARM GAS  C:\Users\fastr\AppData\Local\Temp\cc5QJ0Ta.s 			page 13
+ARM GAS  C:\Users\fastr\AppData\Local\Temp\ccMeZEyW.s 			page 13
 
 
  266:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c_ex.c ****     __HAL_I2C_ENABLE(hi2c);
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\fastr\AppData\Local\Temp\cc5QJ0Ta.s 			page 1
  451 0050 FAE7     		b	.L18
  452              	.L22:
  453 0052 C046     		.align	2
-ARM GAS  C:\Users\fastr\AppData\Local\Temp\cc5QJ0Ta.s 			page 14
+ARM GAS  C:\Users\fastr\AppData\Local\Temp\ccMeZEyW.s 			page 14
 
 
  454              	.L21:
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\fastr\AppData\Local\Temp\cc5QJ0Ta.s 			page 1
  476              		.cfi_def_cfa_offset 8
  314:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c_ex.c ****   /* Check the parameter */
  315:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c_ex.c ****   assert_param(IS_I2C_FASTMODEPLUS(ConfigFastModePlus));
-ARM GAS  C:\Users\fastr\AppData\Local\Temp\cc5QJ0Ta.s 			page 15
+ARM GAS  C:\Users\fastr\AppData\Local\Temp\ccMeZEyW.s 			page 15
 
 
  477              		.loc 1 315 3 is_stmt 1 view .LVU137
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\fastr\AppData\Local\Temp\cc5QJ0Ta.s 			page 1
  327:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c_ex.c ****   *   This parameter can be one of the @ref I2CEx_FastModePlus values
  328:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c_ex.c ****   * @note  For I2C1, fast mode plus driving capability can be disabled on all selected
  329:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c_ex.c ****   *        I2C1 pins using I2C_FASTMODEPLUS_I2C1 parameter or independently
-ARM GAS  C:\Users\fastr\AppData\Local\Temp\cc5QJ0Ta.s 			page 16
+ARM GAS  C:\Users\fastr\AppData\Local\Temp\ccMeZEyW.s 			page 16
 
 
  330:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c_ex.c ****   *        on each one of the following pins PB6, PB7, PB8 and PB9.
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\fastr\AppData\Local\Temp\cc5QJ0Ta.s 			page 1
  558              		.align	2
  559              	.L27:
  560 0020 00100240 		.word	1073876992
-ARM GAS  C:\Users\fastr\AppData\Local\Temp\cc5QJ0Ta.s 			page 17
+ARM GAS  C:\Users\fastr\AppData\Local\Temp\ccMeZEyW.s 			page 17
 
 
  561 0024 00000140 		.word	1073807360
@@ -972,27 +972,27 @@ ARM GAS  C:\Users\fastr\AppData\Local\Temp\cc5QJ0Ta.s 			page 1
  570              		.file 5 "Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_def.h"
  571              		.file 6 "Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_dma.h"
  572              		.file 7 "Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_i2c.h"
-ARM GAS  C:\Users\fastr\AppData\Local\Temp\cc5QJ0Ta.s 			page 18
+ARM GAS  C:\Users\fastr\AppData\Local\Temp\ccMeZEyW.s 			page 18
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 stm32f0xx_hal_i2c_ex.c
-C:\Users\fastr\AppData\Local\Temp\cc5QJ0Ta.s:19     .text.HAL_I2CEx_ConfigAnalogFilter:00000000 $t
-C:\Users\fastr\AppData\Local\Temp\cc5QJ0Ta.s:25     .text.HAL_I2CEx_ConfigAnalogFilter:00000000 HAL_I2CEx_ConfigAnalogFilter
-C:\Users\fastr\AppData\Local\Temp\cc5QJ0Ta.s:129    .text.HAL_I2CEx_ConfigAnalogFilter:00000058 $d
-C:\Users\fastr\AppData\Local\Temp\cc5QJ0Ta.s:134    .text.HAL_I2CEx_ConfigDigitalFilter:00000000 $t
-C:\Users\fastr\AppData\Local\Temp\cc5QJ0Ta.s:140    .text.HAL_I2CEx_ConfigDigitalFilter:00000000 HAL_I2CEx_ConfigDigitalFilter
-C:\Users\fastr\AppData\Local\Temp\cc5QJ0Ta.s:250    .text.HAL_I2CEx_ConfigDigitalFilter:00000054 $d
-C:\Users\fastr\AppData\Local\Temp\cc5QJ0Ta.s:255    .text.HAL_I2CEx_EnableWakeUp:00000000 $t
-C:\Users\fastr\AppData\Local\Temp\cc5QJ0Ta.s:261    .text.HAL_I2CEx_EnableWakeUp:00000000 HAL_I2CEx_EnableWakeUp
-C:\Users\fastr\AppData\Local\Temp\cc5QJ0Ta.s:356    .text.HAL_I2CEx_DisableWakeUp:00000000 $t
-C:\Users\fastr\AppData\Local\Temp\cc5QJ0Ta.s:362    .text.HAL_I2CEx_DisableWakeUp:00000000 HAL_I2CEx_DisableWakeUp
-C:\Users\fastr\AppData\Local\Temp\cc5QJ0Ta.s:455    .text.HAL_I2CEx_DisableWakeUp:00000054 $d
-C:\Users\fastr\AppData\Local\Temp\cc5QJ0Ta.s:460    .text.HAL_I2CEx_EnableFastModePlus:00000000 $t
-C:\Users\fastr\AppData\Local\Temp\cc5QJ0Ta.s:466    .text.HAL_I2CEx_EnableFastModePlus:00000000 HAL_I2CEx_EnableFastModePlus
-C:\Users\fastr\AppData\Local\Temp\cc5QJ0Ta.s:507    .text.HAL_I2CEx_EnableFastModePlus:00000020 $d
-C:\Users\fastr\AppData\Local\Temp\cc5QJ0Ta.s:513    .text.HAL_I2CEx_DisableFastModePlus:00000000 $t
-C:\Users\fastr\AppData\Local\Temp\cc5QJ0Ta.s:519    .text.HAL_I2CEx_DisableFastModePlus:00000000 HAL_I2CEx_DisableFastModePlus
-C:\Users\fastr\AppData\Local\Temp\cc5QJ0Ta.s:560    .text.HAL_I2CEx_DisableFastModePlus:00000020 $d
+C:\Users\fastr\AppData\Local\Temp\ccMeZEyW.s:19     .text.HAL_I2CEx_ConfigAnalogFilter:00000000 $t
+C:\Users\fastr\AppData\Local\Temp\ccMeZEyW.s:25     .text.HAL_I2CEx_ConfigAnalogFilter:00000000 HAL_I2CEx_ConfigAnalogFilter
+C:\Users\fastr\AppData\Local\Temp\ccMeZEyW.s:129    .text.HAL_I2CEx_ConfigAnalogFilter:00000058 $d
+C:\Users\fastr\AppData\Local\Temp\ccMeZEyW.s:134    .text.HAL_I2CEx_ConfigDigitalFilter:00000000 $t
+C:\Users\fastr\AppData\Local\Temp\ccMeZEyW.s:140    .text.HAL_I2CEx_ConfigDigitalFilter:00000000 HAL_I2CEx_ConfigDigitalFilter
+C:\Users\fastr\AppData\Local\Temp\ccMeZEyW.s:250    .text.HAL_I2CEx_ConfigDigitalFilter:00000054 $d
+C:\Users\fastr\AppData\Local\Temp\ccMeZEyW.s:255    .text.HAL_I2CEx_EnableWakeUp:00000000 $t
+C:\Users\fastr\AppData\Local\Temp\ccMeZEyW.s:261    .text.HAL_I2CEx_EnableWakeUp:00000000 HAL_I2CEx_EnableWakeUp
+C:\Users\fastr\AppData\Local\Temp\ccMeZEyW.s:356    .text.HAL_I2CEx_DisableWakeUp:00000000 $t
+C:\Users\fastr\AppData\Local\Temp\ccMeZEyW.s:362    .text.HAL_I2CEx_DisableWakeUp:00000000 HAL_I2CEx_DisableWakeUp
+C:\Users\fastr\AppData\Local\Temp\ccMeZEyW.s:455    .text.HAL_I2CEx_DisableWakeUp:00000054 $d
+C:\Users\fastr\AppData\Local\Temp\ccMeZEyW.s:460    .text.HAL_I2CEx_EnableFastModePlus:00000000 $t
+C:\Users\fastr\AppData\Local\Temp\ccMeZEyW.s:466    .text.HAL_I2CEx_EnableFastModePlus:00000000 HAL_I2CEx_EnableFastModePlus
+C:\Users\fastr\AppData\Local\Temp\ccMeZEyW.s:507    .text.HAL_I2CEx_EnableFastModePlus:00000020 $d
+C:\Users\fastr\AppData\Local\Temp\ccMeZEyW.s:513    .text.HAL_I2CEx_DisableFastModePlus:00000000 $t
+C:\Users\fastr\AppData\Local\Temp\ccMeZEyW.s:519    .text.HAL_I2CEx_DisableFastModePlus:00000000 HAL_I2CEx_DisableFastModePlus
+C:\Users\fastr\AppData\Local\Temp\ccMeZEyW.s:560    .text.HAL_I2CEx_DisableFastModePlus:00000020 $d
 
 NO UNDEFINED SYMBOLS

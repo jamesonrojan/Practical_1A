@@ -1902,12 +1902,12 @@ LOAD c:/Users/fastr/AppData/Roaming/Code/User/globalStorage/bmd.stm32-for-vscode
  .debug_rnglists
                 0x00000101       0x19 build/debug/startup_stm32f051x8.o
 
-.debug_line     0x00000000      0xe96
- .debug_line    0x00000000      0x35f build/debug/main.o
- .debug_line    0x0000035f      0x5b7 build/debug/stm32f0xx_hal.o
- .debug_line    0x00000916      0x256 build/debug/stm32f0xx_it.o
- .debug_line    0x00000b6c      0x2b3 build/debug/system_stm32f0xx.o
- .debug_line    0x00000e1f       0x77 build/debug/startup_stm32f051x8.o
+.debug_line     0x00000000      0xe98
+ .debug_line    0x00000000      0x361 build/debug/main.o
+ .debug_line    0x00000361      0x5b7 build/debug/stm32f0xx_hal.o
+ .debug_line    0x00000918      0x256 build/debug/stm32f0xx_it.o
+ .debug_line    0x00000b6e      0x2b3 build/debug/system_stm32f0xx.o
+ .debug_line    0x00000e21       0x77 build/debug/startup_stm32f051x8.o
 
 .debug_str      0x00000000      0x92f
  .debug_str     0x00000000      0x92f build/debug/main.o

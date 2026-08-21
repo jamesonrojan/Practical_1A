@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\fastr\AppData\Local\Temp\ccIXs5Rb.s 			page 1
+ARM GAS  C:\Users\fastr\AppData\Local\Temp\cc8ZC32Q.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\fastr\AppData\Local\Temp\ccIXs5Rb.s 			page 1
   30:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash.c **** 
   31:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash.c ****                      ##### How to use this driver #####
   32:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash.c ****   ==============================================================================
-ARM GAS  C:\Users\fastr\AppData\Local\Temp\ccIXs5Rb.s 			page 2
+ARM GAS  C:\Users\fastr\AppData\Local\Temp\cc8ZC32Q.s 			page 2
 
 
   33:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash.c ****   [..]                             
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\fastr\AppData\Local\Temp\ccIXs5Rb.s 			page 1
   87:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash.c **** 
   88:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash.c **** #ifdef HAL_FLASH_MODULE_ENABLED
   89:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash.c **** 
-ARM GAS  C:\Users\fastr\AppData\Local\Temp\ccIXs5Rb.s 			page 3
+ARM GAS  C:\Users\fastr\AppData\Local\Temp\cc8ZC32Q.s 			page 3
 
 
   90:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash.c **** /** @defgroup FLASH FLASH
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\fastr\AppData\Local\Temp\ccIXs5Rb.s 			page 1
  144:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash.c ****   * @{
  145:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash.c ****   */
  146:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash.c **** 
-ARM GAS  C:\Users\fastr\AppData\Local\Temp\ccIXs5Rb.s 			page 4
+ARM GAS  C:\Users\fastr\AppData\Local\Temp\cc8ZC32Q.s 			page 4
 
 
  147:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash.c **** /**
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\fastr\AppData\Local\Temp\ccIXs5Rb.s 			page 1
  201:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash.c ****       FLASH_Program_HalfWord((Address + (2U*index)), (uint16_t)(Data >> (16U*index)));
  202:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash.c **** 
  203:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash.c ****         /* Wait for last operation to be completed */
-ARM GAS  C:\Users\fastr\AppData\Local\Temp\ccIXs5Rb.s 			page 5
+ARM GAS  C:\Users\fastr\AppData\Local\Temp\cc8ZC32Q.s 			page 5
 
 
  204:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash.c ****         status = FLASH_WaitForLastOperation(FLASH_TIMEOUT_VALUE);
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\fastr\AppData\Local\Temp\ccIXs5Rb.s 			page 1
  258:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash.c ****     pFlash.DataRemaining = 1U;
  259:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash.c ****   }
  260:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash.c ****   else if(TypeProgram == FLASH_TYPEPROGRAM_WORD)
-ARM GAS  C:\Users\fastr\AppData\Local\Temp\ccIXs5Rb.s 			page 6
+ARM GAS  C:\Users\fastr\AppData\Local\Temp\cc8ZC32Q.s 			page 6
 
 
  261:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash.c ****   {
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\fastr\AppData\Local\Temp\ccIXs5Rb.s 			page 1
  315:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash.c ****       {
  316:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash.c ****         /* Nb of pages to erased can be decreased */
  317:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash.c ****         pFlash.DataRemaining--;
-ARM GAS  C:\Users\fastr\AppData\Local\Temp\ccIXs5Rb.s 			page 7
+ARM GAS  C:\Users\fastr\AppData\Local\Temp\cc8ZC32Q.s 			page 7
 
 
  318:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash.c **** 
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\fastr\AppData\Local\Temp\ccIXs5Rb.s 			page 1
  372:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash.c ****           /* Operation is completed, disable the PG Bit */
  373:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash.c ****           CLEAR_BIT(FLASH->CR, FLASH_CR_PG);
  374:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash.c **** 
-ARM GAS  C:\Users\fastr\AppData\Local\Temp\ccIXs5Rb.s 			page 8
+ARM GAS  C:\Users\fastr\AppData\Local\Temp\cc8ZC32Q.s 			page 8
 
 
  375:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash.c ****           /*Program halfword (16-bit) at a specified address.*/
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\fastr\AppData\Local\Temp\ccIXs5Rb.s 			page 1
  429:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash.c ****   UNUSED(ReturnValue);
  430:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash.c **** 
  431:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash.c ****   /* NOTE : This function Should not be modified, when the callback is needed,
-ARM GAS  C:\Users\fastr\AppData\Local\Temp\ccIXs5Rb.s 			page 9
+ARM GAS  C:\Users\fastr\AppData\Local\Temp\cc8ZC32Q.s 			page 9
 
 
  432:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash.c ****             the HAL_FLASH_EndOfOperationCallback could be implemented in the user file
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\fastr\AppData\Local\Temp\ccIXs5Rb.s 			page 1
  486:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash.c **** 
  487:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash.c ****     /* Verify Flash is unlocked */
  488:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash.c ****     if(READ_BIT(FLASH->CR, FLASH_CR_LOCK) != RESET)
-ARM GAS  C:\Users\fastr\AppData\Local\Temp\ccIXs5Rb.s 			page 10
+ARM GAS  C:\Users\fastr\AppData\Local\Temp\cc8ZC32Q.s 			page 10
 
 
  489:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash.c ****     {
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\fastr\AppData\Local\Temp\ccIXs5Rb.s 			page 1
  543:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash.c ****   * @note   This function will reset automatically the MCU.
  544:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash.c ****   * @retval HAL Status
  545:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash.c ****   */
-ARM GAS  C:\Users\fastr\AppData\Local\Temp\ccIXs5Rb.s 			page 11
+ARM GAS  C:\Users\fastr\AppData\Local\Temp\cc8ZC32Q.s 			page 11
 
 
  546:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash.c **** HAL_StatusTypeDef HAL_FLASH_OB_Launch(void)
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\fastr\AppData\Local\Temp\ccIXs5Rb.s 			page 1
  600:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash.c ****   */
  601:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash.c **** static void FLASH_Program_HalfWord(uint32_t Address, uint16_t Data)
  602:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash.c **** {
-ARM GAS  C:\Users\fastr\AppData\Local\Temp\ccIXs5Rb.s 			page 12
+ARM GAS  C:\Users\fastr\AppData\Local\Temp\cc8ZC32Q.s 			page 12
 
 
   27              		.loc 1 602 1 view -0
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\fastr\AppData\Local\Temp\ccIXs5Rb.s 			page 1
  617:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash.c ****   */
  618:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash.c **** HAL_StatusTypeDef FLASH_WaitForLastOperation(uint32_t Timeout)
  619:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash.c **** {
-ARM GAS  C:\Users\fastr\AppData\Local\Temp\ccIXs5Rb.s 			page 13
+ARM GAS  C:\Users\fastr\AppData\Local\Temp\cc8ZC32Q.s 			page 13
 
 
  620:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash.c ****   /* Wait for the FLASH operation to complete by polling on BUSY flag to be reset.
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\fastr\AppData\Local\Temp\ccIXs5Rb.s 			page 1
   77              		.loc 1 665 6 is_stmt 0 view .LVU11
   78 0000 0D4B     		ldr	r3, .L8
   79 0002 DA68     		ldr	r2, [r3, #12]
-ARM GAS  C:\Users\fastr\AppData\Local\Temp\ccIXs5Rb.s 			page 14
+ARM GAS  C:\Users\fastr\AppData\Local\Temp\cc8ZC32Q.s 			page 14
 
 
   80 0004 1021     		movs	r1, #16
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\fastr\AppData\Local\Temp\ccIXs5Rb.s 			page 1
  123 0032 D360     		str	r3, [r2, #12]
  677:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash.c **** }  
  124              		.loc 1 677 1 is_stmt 0 view .LVU27
-ARM GAS  C:\Users\fastr\AppData\Local\Temp\ccIXs5Rb.s 			page 15
+ARM GAS  C:\Users\fastr\AppData\Local\Temp\cc8ZC32Q.s 			page 15
 
 
  125              		@ sp needed
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\fastr\AppData\Local\Temp\ccIXs5Rb.s 			page 1
  174 0012 25D0     		beq	.L15
  242:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash.c **** 
  175              		.loc 1 242 3 discriminator 2 view .LVU35
-ARM GAS  C:\Users\fastr\AppData\Local\Temp\ccIXs5Rb.s 			page 16
+ARM GAS  C:\Users\fastr\AppData\Local\Temp\cc8ZC32Q.s 			page 16
 
 
  176 0014 134B     		ldr	r3, .L18
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\fastr\AppData\Local\Temp\ccIXs5Rb.s 			page 1
  274:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash.c **** 
  214              		.loc 1 274 3 is_stmt 1 view .LVU52
  215 003e 89B2     		uxth	r1, r1
-ARM GAS  C:\Users\fastr\AppData\Local\Temp\ccIXs5Rb.s 			page 17
+ARM GAS  C:\Users\fastr\AppData\Local\Temp\cc8ZC32Q.s 			page 17
 
 
  216 0040 FFF7FEFF 		bl	FLASH_Program_HalfWord
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\fastr\AppData\Local\Temp\ccIXs5Rb.s 			page 1
  256              	.L19:
  257              		.align	2
  258              	.L18:
-ARM GAS  C:\Users\fastr\AppData\Local\Temp\ccIXs5Rb.s 			page 18
+ARM GAS  C:\Users\fastr\AppData\Local\Temp\cc8ZC32Q.s 			page 18
 
 
  259 0064 00000000 		.word	pFlash
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\fastr\AppData\Local\Temp\ccIXs5Rb.s 			page 1
  312              		.code	16
  313              		.thumb_func
  315              	HAL_FLASH_IRQHandler:
-ARM GAS  C:\Users\fastr\AppData\Local\Temp\ccIXs5Rb.s 			page 19
+ARM GAS  C:\Users\fastr\AppData\Local\Temp\cc8ZC32Q.s 			page 19
 
 
  316              	.LFB42:
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\fastr\AppData\Local\Temp\ccIXs5Rb.s 			page 1
  296:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash.c ****     
  358              		.loc 1 296 5 is_stmt 1 view .LVU85
  359 001e FFF7FEFF 		bl	FLASH_SetErrorCode
-ARM GAS  C:\Users\fastr\AppData\Local\Temp\ccIXs5Rb.s 			page 20
+ARM GAS  C:\Users\fastr\AppData\Local\Temp\cc8ZC32Q.s 			page 20
 
 
  360              	.LVL18:
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\fastr\AppData\Local\Temp\ccIXs5Rb.s 			page 1
  399 004c 1B78     		ldrb	r3, [r3]
  345:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash.c ****       {
  400              		.loc 1 345 14 view .LVU101
-ARM GAS  C:\Users\fastr\AppData\Local\Temp\ccIXs5Rb.s 			page 21
+ARM GAS  C:\Users\fastr\AppData\Local\Temp\cc8ZC32Q.s 			page 21
 
 
  401 004e 022B     		cmp	r3, #2
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\fastr\AppData\Local\Temp\ccIXs5Rb.s 			page 1
  439              	.L31:
  396:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash.c ****           pFlash.ProcedureOnGoing = FLASH_PROC_NONE;
  440              		.loc 1 396 11 is_stmt 1 view .LVU118
-ARM GAS  C:\Users\fastr\AppData\Local\Temp\ccIXs5Rb.s 			page 22
+ARM GAS  C:\Users\fastr\AppData\Local\Temp\cc8ZC32Q.s 			page 22
 
 
  396:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash.c ****           pFlash.ProcedureOnGoing = FLASH_PROC_NONE;
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\fastr\AppData\Local\Temp\ccIXs5Rb.s 			page 1
  481              		.loc 1 317 15 is_stmt 0 view .LVU132
  482 00a8 294B     		ldr	r3, .L42+4
  483 00aa 5A68     		ldr	r2, [r3, #4]
-ARM GAS  C:\Users\fastr\AppData\Local\Temp\ccIXs5Rb.s 			page 23
+ARM GAS  C:\Users\fastr\AppData\Local\Temp\cc8ZC32Q.s 			page 23
 
 
  317:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash.c **** 
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\fastr\AppData\Local\Temp\ccIXs5Rb.s 			page 1
  523 00d8 D5E7     		b	.L25
  524              	.LVL26:
  525              	.L27:
-ARM GAS  C:\Users\fastr\AppData\Local\Temp\ccIXs5Rb.s 			page 24
+ARM GAS  C:\Users\fastr\AppData\Local\Temp\cc8ZC32Q.s 			page 24
 
 
  339:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash.c ****           pFlash.ProcedureOnGoing = FLASH_PROC_NONE;
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\fastr\AppData\Local\Temp\ccIXs5Rb.s 			page 1
  367:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash.c ****           
  567              		.loc 1 367 22 is_stmt 0 view .LVU161
  568 010c 9868     		ldr	r0, [r3, #8]
-ARM GAS  C:\Users\fastr\AppData\Local\Temp\ccIXs5Rb.s 			page 25
+ARM GAS  C:\Users\fastr\AppData\Local\Temp\cc8ZC32Q.s 			page 25
 
 
  569              	.LVL30:
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\fastr\AppData\Local\Temp\ccIXs5Rb.s 			page 1
  388:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash.c ****           }
  610              		.loc 1 388 52 is_stmt 0 view .LVU175
  611 013e 044B     		ldr	r3, .L42+4
-ARM GAS  C:\Users\fastr\AppData\Local\Temp\ccIXs5Rb.s 			page 26
+ARM GAS  C:\Users\fastr\AppData\Local\Temp\cc8ZC32Q.s 			page 26
 
 
  612 0140 9868     		ldr	r0, [r3, #8]
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\fastr\AppData\Local\Temp\ccIXs5Rb.s 			page 1
  658              		.loc 1 488 5 view .LVU185
  488:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash.c ****     {
  659              		.loc 1 488 8 is_stmt 0 view .LVU186
-ARM GAS  C:\Users\fastr\AppData\Local\Temp\ccIXs5Rb.s 			page 27
+ARM GAS  C:\Users\fastr\AppData\Local\Temp\cc8ZC32Q.s 			page 27
 
 
  660 0012 1B69     		ldr	r3, [r3, #16]
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\fastr\AppData\Local\Temp\ccIXs5Rb.s 			page 1
  506:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash.c **** }
  709              		.loc 1 506 3 view .LVU194
  507:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash.c **** 
-ARM GAS  C:\Users\fastr\AppData\Local\Temp\ccIXs5Rb.s 			page 28
+ARM GAS  C:\Users\fastr\AppData\Local\Temp\cc8ZC32Q.s 			page 28
 
 
  710              		.loc 1 507 1 is_stmt 0 view .LVU195
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\fastr\AppData\Local\Temp\ccIXs5Rb.s 			page 1
  523:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash.c ****   }  
  757              		.loc 1 523 12 view .LVU205
  758 0016 0120     		movs	r0, #1
-ARM GAS  C:\Users\fastr\AppData\Local\Temp\ccIXs5Rb.s 			page 29
+ARM GAS  C:\Users\fastr\AppData\Local\Temp\cc8ZC32Q.s 			page 29
 
 
  759 0018 FCE7     		b	.L54
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\fastr\AppData\Local\Temp\ccIXs5Rb.s 			page 1
  812              		.cfi_startproc
  813              		@ args = 0, pretend = 0, frame = 0
  814              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  C:\Users\fastr\AppData\Local\Temp\ccIXs5Rb.s 			page 30
+ARM GAS  C:\Users\fastr\AppData\Local\Temp\cc8ZC32Q.s 			page 30
 
 
  815              		@ link register save eliminated.
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\fastr\AppData\Local\Temp\ccIXs5Rb.s 			page 1
  861              		.loc 1 626 9 view .LVU220
  862 000a 124B     		ldr	r3, .L77
  863 000c DB68     		ldr	r3, [r3, #12]
-ARM GAS  C:\Users\fastr\AppData\Local\Temp\ccIXs5Rb.s 			page 31
+ARM GAS  C:\Users\fastr\AppData\Local\Temp\cc8ZC32Q.s 			page 31
 
 
  864 000e DB07     		lsls	r3, r3, #31
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\fastr\AppData\Local\Temp\ccIXs5Rb.s 			page 1
  903 0038 DB68     		ldr	r3, [r3, #12]
  644:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash.c ****      __HAL_FLASH_GET_FLAG(FLASH_FLAG_PGERR))
  904              		.loc 1 644 5 view .LVU236
-ARM GAS  C:\Users\fastr\AppData\Local\Temp\ccIXs5Rb.s 			page 32
+ARM GAS  C:\Users\fastr\AppData\Local\Temp\cc8ZC32Q.s 			page 32
 
 
  905 003a DB06     		lsls	r3, r3, #27
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\fastr\AppData\Local\Temp\ccIXs5Rb.s 			page 1
  166:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash.c ****   HAL_StatusTypeDef status = HAL_ERROR;
  952              		.loc 1 166 1 is_stmt 0 view .LVU246
  953 0000 F0B5     		push	{r4, r5, r6, r7, lr}
-ARM GAS  C:\Users\fastr\AppData\Local\Temp\ccIXs5Rb.s 			page 33
+ARM GAS  C:\Users\fastr\AppData\Local\Temp\cc8ZC32Q.s 			page 33
 
 
  954              		.cfi_def_cfa_offset 20
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\fastr\AppData\Local\Temp\ccIXs5Rb.s 			page 1
  994              		.loc 1 179 14 view .LVU260
  995 0022 031E     		subs	r3, r0, #0
  996              	.LVL51:
-ARM GAS  C:\Users\fastr\AppData\Local\Temp\ccIXs5Rb.s 			page 34
+ARM GAS  C:\Users\fastr\AppData\Local\Temp\cc8ZC32Q.s 			page 34
 
 
  181:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash.c ****   {
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\fastr\AppData\Local\Temp\ccIXs5Rb.s 			page 1
  1038              	.L85:
  201:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash.c **** 
  1039              		.loc 1 201 7 view .LVU274
-ARM GAS  C:\Users\fastr\AppData\Local\Temp\ccIXs5Rb.s 			page 35
+ARM GAS  C:\Users\fastr\AppData\Local\Temp\cc8ZC32Q.s 			page 35
 
 
  1040 004c 89B2     		uxth	r1, r1
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\fastr\AppData\Local\Temp\ccIXs5Rb.s 			page 1
  1081 007c D140     		lsrs	r1, r1, r2
  1082 007e E5E7     		b	.L85
  1083              	.LVL61:
-ARM GAS  C:\Users\fastr\AppData\Local\Temp\ccIXs5Rb.s 			page 36
+ARM GAS  C:\Users\fastr\AppData\Local\Temp\cc8ZC32Q.s 			page 36
 
 
  1084              	.L81:
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\fastr\AppData\Local\Temp\ccIXs5Rb.s 			page 1
  1131              		.cfi_def_cfa_offset 8
  1132              		.cfi_offset 4, -8
  1133              		.cfi_offset 14, -4
-ARM GAS  C:\Users\fastr\AppData\Local\Temp\ccIXs5Rb.s 			page 37
+ARM GAS  C:\Users\fastr\AppData\Local\Temp\cc8ZC32Q.s 			page 37
 
 
  549:Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash.c ****   
@@ -2205,53 +2205,53 @@ ARM GAS  C:\Users\fastr\AppData\Local\Temp\ccIXs5Rb.s 			page 1
  1170              		.file 6 "Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_def.h"
  1171              		.file 7 "Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_flash.h"
  1172              		.file 8 "Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal.h"
-ARM GAS  C:\Users\fastr\AppData\Local\Temp\ccIXs5Rb.s 			page 38
+ARM GAS  C:\Users\fastr\AppData\Local\Temp\cc8ZC32Q.s 			page 38
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 stm32f0xx_hal_flash.c
-C:\Users\fastr\AppData\Local\Temp\ccIXs5Rb.s:19     .text.FLASH_Program_HalfWord:00000000 $t
-C:\Users\fastr\AppData\Local\Temp\ccIXs5Rb.s:24     .text.FLASH_Program_HalfWord:00000000 FLASH_Program_HalfWord
-C:\Users\fastr\AppData\Local\Temp\ccIXs5Rb.s:56     .text.FLASH_Program_HalfWord:00000018 $d
-C:\Users\fastr\AppData\Local\Temp\ccIXs5Rb.s:1162   .bss.pFlash:00000000 pFlash
-C:\Users\fastr\AppData\Local\Temp\ccIXs5Rb.s:62     .text.FLASH_SetErrorCode:00000000 $t
-C:\Users\fastr\AppData\Local\Temp\ccIXs5Rb.s:67     .text.FLASH_SetErrorCode:00000000 FLASH_SetErrorCode
-C:\Users\fastr\AppData\Local\Temp\ccIXs5Rb.s:130    .text.FLASH_SetErrorCode:00000038 $d
-C:\Users\fastr\AppData\Local\Temp\ccIXs5Rb.s:136    .text.HAL_FLASH_Program_IT:00000000 $t
-C:\Users\fastr\AppData\Local\Temp\ccIXs5Rb.s:142    .text.HAL_FLASH_Program_IT:00000000 HAL_FLASH_Program_IT
-C:\Users\fastr\AppData\Local\Temp\ccIXs5Rb.s:259    .text.HAL_FLASH_Program_IT:00000064 $d
-C:\Users\fastr\AppData\Local\Temp\ccIXs5Rb.s:265    .text.HAL_FLASH_EndOfOperationCallback:00000000 $t
-C:\Users\fastr\AppData\Local\Temp\ccIXs5Rb.s:271    .text.HAL_FLASH_EndOfOperationCallback:00000000 HAL_FLASH_EndOfOperationCallback
-C:\Users\fastr\AppData\Local\Temp\ccIXs5Rb.s:287    .text.HAL_FLASH_OperationErrorCallback:00000000 $t
-C:\Users\fastr\AppData\Local\Temp\ccIXs5Rb.s:293    .text.HAL_FLASH_OperationErrorCallback:00000000 HAL_FLASH_OperationErrorCallback
-C:\Users\fastr\AppData\Local\Temp\ccIXs5Rb.s:309    .text.HAL_FLASH_IRQHandler:00000000 $t
-C:\Users\fastr\AppData\Local\Temp\ccIXs5Rb.s:315    .text.HAL_FLASH_IRQHandler:00000000 HAL_FLASH_IRQHandler
-C:\Users\fastr\AppData\Local\Temp\ccIXs5Rb.s:622    .text.HAL_FLASH_IRQHandler:0000014c $d
-C:\Users\fastr\AppData\Local\Temp\ccIXs5Rb.s:629    .text.HAL_FLASH_Unlock:00000000 $t
-C:\Users\fastr\AppData\Local\Temp\ccIXs5Rb.s:635    .text.HAL_FLASH_Unlock:00000000 HAL_FLASH_Unlock
-C:\Users\fastr\AppData\Local\Temp\ccIXs5Rb.s:683    .text.HAL_FLASH_Unlock:00000024 $d
-C:\Users\fastr\AppData\Local\Temp\ccIXs5Rb.s:690    .text.HAL_FLASH_Lock:00000000 $t
-C:\Users\fastr\AppData\Local\Temp\ccIXs5Rb.s:696    .text.HAL_FLASH_Lock:00000000 HAL_FLASH_Lock
-C:\Users\fastr\AppData\Local\Temp\ccIXs5Rb.s:717    .text.HAL_FLASH_Lock:00000010 $d
-C:\Users\fastr\AppData\Local\Temp\ccIXs5Rb.s:722    .text.HAL_FLASH_OB_Unlock:00000000 $t
-C:\Users\fastr\AppData\Local\Temp\ccIXs5Rb.s:728    .text.HAL_FLASH_OB_Unlock:00000000 HAL_FLASH_OB_Unlock
-C:\Users\fastr\AppData\Local\Temp\ccIXs5Rb.s:763    .text.HAL_FLASH_OB_Unlock:0000001c $d
-C:\Users\fastr\AppData\Local\Temp\ccIXs5Rb.s:770    .text.HAL_FLASH_OB_Lock:00000000 $t
-C:\Users\fastr\AppData\Local\Temp\ccIXs5Rb.s:776    .text.HAL_FLASH_OB_Lock:00000000 HAL_FLASH_OB_Lock
-C:\Users\fastr\AppData\Local\Temp\ccIXs5Rb.s:797    .text.HAL_FLASH_OB_Lock:00000010 $d
-C:\Users\fastr\AppData\Local\Temp\ccIXs5Rb.s:803    .text.HAL_FLASH_GetError:00000000 $t
-C:\Users\fastr\AppData\Local\Temp\ccIXs5Rb.s:809    .text.HAL_FLASH_GetError:00000000 HAL_FLASH_GetError
-C:\Users\fastr\AppData\Local\Temp\ccIXs5Rb.s:826    .text.HAL_FLASH_GetError:00000008 $d
-C:\Users\fastr\AppData\Local\Temp\ccIXs5Rb.s:831    .text.FLASH_WaitForLastOperation:00000000 $t
-C:\Users\fastr\AppData\Local\Temp\ccIXs5Rb.s:837    .text.FLASH_WaitForLastOperation:00000000 FLASH_WaitForLastOperation
-C:\Users\fastr\AppData\Local\Temp\ccIXs5Rb.s:934    .text.FLASH_WaitForLastOperation:00000054 $d
-C:\Users\fastr\AppData\Local\Temp\ccIXs5Rb.s:939    .text.HAL_FLASH_Program:00000000 $t
-C:\Users\fastr\AppData\Local\Temp\ccIXs5Rb.s:945    .text.HAL_FLASH_Program:00000000 HAL_FLASH_Program
-C:\Users\fastr\AppData\Local\Temp\ccIXs5Rb.s:1111   .text.HAL_FLASH_Program:00000090 $d
-C:\Users\fastr\AppData\Local\Temp\ccIXs5Rb.s:1118   .text.HAL_FLASH_OB_Launch:00000000 $t
-C:\Users\fastr\AppData\Local\Temp\ccIXs5Rb.s:1124   .text.HAL_FLASH_OB_Launch:00000000 HAL_FLASH_OB_Launch
-C:\Users\fastr\AppData\Local\Temp\ccIXs5Rb.s:1152   .text.HAL_FLASH_OB_Launch:00000018 $d
-C:\Users\fastr\AppData\Local\Temp\ccIXs5Rb.s:1159   .bss.pFlash:00000000 $d
+C:\Users\fastr\AppData\Local\Temp\cc8ZC32Q.s:19     .text.FLASH_Program_HalfWord:00000000 $t
+C:\Users\fastr\AppData\Local\Temp\cc8ZC32Q.s:24     .text.FLASH_Program_HalfWord:00000000 FLASH_Program_HalfWord
+C:\Users\fastr\AppData\Local\Temp\cc8ZC32Q.s:56     .text.FLASH_Program_HalfWord:00000018 $d
+C:\Users\fastr\AppData\Local\Temp\cc8ZC32Q.s:1162   .bss.pFlash:00000000 pFlash
+C:\Users\fastr\AppData\Local\Temp\cc8ZC32Q.s:62     .text.FLASH_SetErrorCode:00000000 $t
+C:\Users\fastr\AppData\Local\Temp\cc8ZC32Q.s:67     .text.FLASH_SetErrorCode:00000000 FLASH_SetErrorCode
+C:\Users\fastr\AppData\Local\Temp\cc8ZC32Q.s:130    .text.FLASH_SetErrorCode:00000038 $d
+C:\Users\fastr\AppData\Local\Temp\cc8ZC32Q.s:136    .text.HAL_FLASH_Program_IT:00000000 $t
+C:\Users\fastr\AppData\Local\Temp\cc8ZC32Q.s:142    .text.HAL_FLASH_Program_IT:00000000 HAL_FLASH_Program_IT
+C:\Users\fastr\AppData\Local\Temp\cc8ZC32Q.s:259    .text.HAL_FLASH_Program_IT:00000064 $d
+C:\Users\fastr\AppData\Local\Temp\cc8ZC32Q.s:265    .text.HAL_FLASH_EndOfOperationCallback:00000000 $t
+C:\Users\fastr\AppData\Local\Temp\cc8ZC32Q.s:271    .text.HAL_FLASH_EndOfOperationCallback:00000000 HAL_FLASH_EndOfOperationCallback
+C:\Users\fastr\AppData\Local\Temp\cc8ZC32Q.s:287    .text.HAL_FLASH_OperationErrorCallback:00000000 $t
+C:\Users\fastr\AppData\Local\Temp\cc8ZC32Q.s:293    .text.HAL_FLASH_OperationErrorCallback:00000000 HAL_FLASH_OperationErrorCallback
+C:\Users\fastr\AppData\Local\Temp\cc8ZC32Q.s:309    .text.HAL_FLASH_IRQHandler:00000000 $t
+C:\Users\fastr\AppData\Local\Temp\cc8ZC32Q.s:315    .text.HAL_FLASH_IRQHandler:00000000 HAL_FLASH_IRQHandler
+C:\Users\fastr\AppData\Local\Temp\cc8ZC32Q.s:622    .text.HAL_FLASH_IRQHandler:0000014c $d
+C:\Users\fastr\AppData\Local\Temp\cc8ZC32Q.s:629    .text.HAL_FLASH_Unlock:00000000 $t
+C:\Users\fastr\AppData\Local\Temp\cc8ZC32Q.s:635    .text.HAL_FLASH_Unlock:00000000 HAL_FLASH_Unlock
+C:\Users\fastr\AppData\Local\Temp\cc8ZC32Q.s:683    .text.HAL_FLASH_Unlock:00000024 $d
+C:\Users\fastr\AppData\Local\Temp\cc8ZC32Q.s:690    .text.HAL_FLASH_Lock:00000000 $t
+C:\Users\fastr\AppData\Local\Temp\cc8ZC32Q.s:696    .text.HAL_FLASH_Lock:00000000 HAL_FLASH_Lock
+C:\Users\fastr\AppData\Local\Temp\cc8ZC32Q.s:717    .text.HAL_FLASH_Lock:00000010 $d
+C:\Users\fastr\AppData\Local\Temp\cc8ZC32Q.s:722    .text.HAL_FLASH_OB_Unlock:00000000 $t
+C:\Users\fastr\AppData\Local\Temp\cc8ZC32Q.s:728    .text.HAL_FLASH_OB_Unlock:00000000 HAL_FLASH_OB_Unlock
+C:\Users\fastr\AppData\Local\Temp\cc8ZC32Q.s:763    .text.HAL_FLASH_OB_Unlock:0000001c $d
+C:\Users\fastr\AppData\Local\Temp\cc8ZC32Q.s:770    .text.HAL_FLASH_OB_Lock:00000000 $t
+C:\Users\fastr\AppData\Local\Temp\cc8ZC32Q.s:776    .text.HAL_FLASH_OB_Lock:00000000 HAL_FLASH_OB_Lock
+C:\Users\fastr\AppData\Local\Temp\cc8ZC32Q.s:797    .text.HAL_FLASH_OB_Lock:00000010 $d
+C:\Users\fastr\AppData\Local\Temp\cc8ZC32Q.s:803    .text.HAL_FLASH_GetError:00000000 $t
+C:\Users\fastr\AppData\Local\Temp\cc8ZC32Q.s:809    .text.HAL_FLASH_GetError:00000000 HAL_FLASH_GetError
+C:\Users\fastr\AppData\Local\Temp\cc8ZC32Q.s:826    .text.HAL_FLASH_GetError:00000008 $d
+C:\Users\fastr\AppData\Local\Temp\cc8ZC32Q.s:831    .text.FLASH_WaitForLastOperation:00000000 $t
+C:\Users\fastr\AppData\Local\Temp\cc8ZC32Q.s:837    .text.FLASH_WaitForLastOperation:00000000 FLASH_WaitForLastOperation
+C:\Users\fastr\AppData\Local\Temp\cc8ZC32Q.s:934    .text.FLASH_WaitForLastOperation:00000054 $d
+C:\Users\fastr\AppData\Local\Temp\cc8ZC32Q.s:939    .text.HAL_FLASH_Program:00000000 $t
+C:\Users\fastr\AppData\Local\Temp\cc8ZC32Q.s:945    .text.HAL_FLASH_Program:00000000 HAL_FLASH_Program
+C:\Users\fastr\AppData\Local\Temp\cc8ZC32Q.s:1111   .text.HAL_FLASH_Program:00000090 $d
+C:\Users\fastr\AppData\Local\Temp\cc8ZC32Q.s:1118   .text.HAL_FLASH_OB_Launch:00000000 $t
+C:\Users\fastr\AppData\Local\Temp\cc8ZC32Q.s:1124   .text.HAL_FLASH_OB_Launch:00000000 HAL_FLASH_OB_Launch
+C:\Users\fastr\AppData\Local\Temp\cc8ZC32Q.s:1152   .text.HAL_FLASH_OB_Launch:00000018 $d
+C:\Users\fastr\AppData\Local\Temp\cc8ZC32Q.s:1159   .bss.pFlash:00000000 $d
 
 UNDEFINED SYMBOLS
 FLASH_PageErase
