@@ -104,9 +104,9 @@ void SystemClock_Config(void)
 static void MX_TIM16_Init(void)
 {
   htim16.Instance = TIM16;
-  htim16.Init.Prescaler =_______ // insert your psc value
+  htim16.Init.Prescaler = 7999; // insert your psc value
   htim16.Init.CounterMode = TIM_COUNTERMODE_UP;
-  htim16.Init.Period =_______          // insert your calculated period or ARR
+  htim16.Init.Period = 999;          // insert your calculated period or ARR
   htim16.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
   htim16.Init.RepetitionCounter = 0;
   htim16.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_ENABLE;
@@ -122,6 +122,14 @@ static void MX_TIM16_Init(void)
 static void MX_GPIO_Init(void)
 {
 /*Insert PB0 initialization code*/
+  __HAL_RCC_GPIOB_CLK_ENABLE();
+
+  GPIO_InitTypeDef GPIO_InitStruct = {0};
+  GPIO_InitStruct.Pin = GPIO_PIN_0;
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 }
 
 /**
@@ -130,7 +138,12 @@ static void MX_GPIO_Init(void)
 void TIM16_IRQHandler(void)
 {
 /*Toggle the pin*/
-}
+  if (__HAL_TIM_GET_FLAG(&htim16, TIM_SR_UIF) != RESET)
+    {
+      __HAL_TIM_CLEAR_IT(&htim16, TIM_IT_UPDATE); // Clear the interrupt flag
+      HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_0); // Toggle PB0
+    }
+  }
 
 /**
   * @brief Error handler
