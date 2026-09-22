@@ -60,8 +60,8 @@ all: main-build
 main-build: Practical1B.elf secondary-outputs
 
 # Tool invocations
-Practical1B.elf Practical1B.map: $(OBJS) $(USER_OBJS) C:\Users\fastr\OneDrive\ -\ University\ of\ Cape\ Town\School\EEE\2\EEE3096S-2026\Practical_1B\Practical1B\STM32F051C8TX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "Practical1B.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m0 -T"C:\Users\fastr\OneDrive - University of Cape Town\School\EEE\2\EEE3096S-2026\Practical_1B\Practical1B\STM32F051C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Practical1B.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Practical1B.elf Practical1B.map: $(OBJS) $(USER_OBJS) C:\Users\fastr\OneDrive\ -\ University\ of\ Cape\ Town\School\EEE\2\Practical_1A\Practical_1B\Practical1B\STM32F051C8TX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "Practical1B.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m0 -T"C:\Users\fastr\OneDrive - University of Cape Town\School\EEE\2\Practical_1A\Practical_1B\Practical1B\STM32F051C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Practical1B.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

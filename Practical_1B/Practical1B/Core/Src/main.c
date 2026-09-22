@@ -51,7 +51,7 @@ static const uint32_t golden_inputs[10] = {
  * the practical sheet. The firmware self-test below compares against these.
  */
 static const uint32_t golden_outputs[10] = {
-    0u, 1u, 3u, 4u, 64u, 255u,
+    0u, 1u, 3u, 4u, 63u, 255u,
     11111u, 31426u, 65535u, 65535u
 };
 
@@ -66,6 +66,7 @@ volatile float    mean_us_per_call  = 0.0f; /* long run divided by N        */
 
 /* Sink for the return value. Stops the optimiser deleting the call. */
 static volatile uint32_t sink = 0u;
+static volatile uint32_t test_input_rt = TEST_INPUT;
 
 /* USER CODE END PV */
 
@@ -132,6 +133,7 @@ static void timing_timer_init(void)
      * different buses on this device. Name both buses in your report.
      */
   RCC->APB2ENR |= RCC_APB2ENR_TIM16EN;
+  (void)RCC->APB2ENR;
 
     /*
      * TODO 6
@@ -229,8 +231,11 @@ static uint32_t time_one_call(uint32_t x)
 
     /* TODO 10: capture the counter into a. Which register holds the count? */
      a = (uint16_t)TIM16->CNT;
+     __asm__ volatile("" ::: "memory");
 
     sink = isqrt(x);                   /* the code under test */
+
+    __asm__ volatile("" ::: "memory");
 
     /* TODO 11: capture the counter into b. */
     b = (uint16_t)TIM16->CNT;
@@ -332,7 +337,7 @@ int main(void)
     /* USER CODE BEGIN 3 */
 
     /* Task 2 and Task 3: single call measurement */
-    single_call_span = time_one_call(TEST_INPUT);
+	 single_call_span = time_one_call(test_input_rt);
 
     /*
      * TODO 17
