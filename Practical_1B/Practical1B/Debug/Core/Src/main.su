@@ -1,0 +1,9 @@
+../Core/Src/main.c:88:13:gpio_init	8	static
+../Core/Src/main.c:127:13:timing_timer_init	8	static
+../Core/Src/main.c:176:24:square_le	40	static
+../Core/Src/main.c:187:17:isqrt	32	static
+../Core/Src/main.c:223:17:time_one_call	32	static
+../Core/Src/main.c:254:17:time_n_calls	24	static
+../Core/Src/main.c:291:5:main	16	static
+../Core/Src/main.c:364:6:SystemClock_Config	80	static
+../Core/Src/main.c:393:6:Error_Handler	8	static,ignoring_inline_asm

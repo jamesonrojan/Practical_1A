@@ -1,0 +1,9 @@
+../Core/Src/main.c:88:13:gpio_init	1
+../Core/Src/main.c:127:13:timing_timer_init	1
+../Core/Src/main.c:176:24:square_le	4
+../Core/Src/main.c:187:17:isqrt	3
+../Core/Src/main.c:223:17:time_one_call	1
+../Core/Src/main.c:254:17:time_n_calls	2
+../Core/Src/main.c:291:5:main	5
+../Core/Src/main.c:364:6:SystemClock_Config	3
+../Core/Src/main.c:393:6:Error_Handler	1
