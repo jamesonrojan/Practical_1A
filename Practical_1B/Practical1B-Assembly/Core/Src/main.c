@@ -4,8 +4,8 @@
   * EEE3096S 2026 - Practical 1B
   * Tasks 4 and 5: cycle-counted phase delay, and LCD analog debugging
   *
-  * Student 1 : <name>  <student number>
-  * Student 2 : <name>  <student number>
+  * Student 1 : Raman Raja  RJXRAM001
+  * Student 2 : Rojan Jameson  JMSROJ001
   * Date      : <date>
   *
   * This file starts the peripherals and hands control to your Assembly.
@@ -81,11 +81,12 @@ int main(void)
    * TODO 1
    * Start the ADC in continuous mode and start DAC channel 1, then hand
    * over to the Assembly loop.
-   *
-   * HAL_ADC_Start(&hadc);
-   * HAL_DAC_Start(&hdac1, DAC_CHANNEL_1);
-   * DSP_Loop();
-   *
+   */
+   HAL_ADC_Start(&hadc);
+   HAL_DAC_Start(&hdac1, DAC_CHANNEL_1);
+   DSP_Loop();
+
+  /*
    * Two settings in the .ioc decide whether this works at all:
    *   Continuous Conversion Mode must be Enabled, or the ADC converts once
    *   and stops, and your DAC output sits flat.
@@ -98,9 +99,10 @@ int main(void)
   /*
    * TODO 2
    * Hand over to the LCD routine.
-   *
-   * LCD_Run();
-   *
+   */
+   LCD_Run();
+
+  /*
    * The LCD needs its power rail settled before the initialisation
    * sequence starts. Add the wait inside lcd.s, not here.
    */
